@@ -92,3 +92,4 @@ exit_but.place(relx=0.85, rely=0.9, anchor="center")
 change_color()
 
 window.mainloop()
+
