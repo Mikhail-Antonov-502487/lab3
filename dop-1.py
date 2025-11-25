@@ -3,7 +3,7 @@ import random
 import pygame
 
 
-def smena_color():
+def change_color():
     st_color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
     end_color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
     r1 = int(st_color[1:3], 16)
@@ -26,7 +26,7 @@ def smena_color():
         window.update()
         window.after(50)
 
-    window.after(100, smena_color)
+    window.after(100, change_color)
 
 def gen_key():
     s = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -89,6 +89,6 @@ exit_but = tk.Button(window, text="Exit", font=("Verdana", 10),
                      command=close_app)
 exit_but.place(relx=0.85, rely=0.9, anchor="center")
 
-smena_color()
+change_color()
 
 window.mainloop()
